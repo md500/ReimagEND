@@ -5,7 +5,7 @@ distributor:
   type: AND
   distributors:
     - type: PADDED_GRID
-      width: 13
+      width: 17
       padding: 8
       salt: 6457
     - type: SAMPLER
@@ -14,7 +14,7 @@ distributor:
         sampler:
           type: OPEN_SIMPLEX_2
           salt: 7568
-      threshold: 0.85
+      threshold: 0.65
 
 locator:
   type: AND
