@@ -9,7 +9,7 @@ vanilla: minecraft:the_end
 
 colors:
   grass: 0x3ccfad
-  foliage: 0xc2917c
+  foliage: 0x9ed8de
 
 palette:
   - GRASS: $meta.yml:top-y
@@ -19,3 +19,5 @@ features:
     - GRASS
     - FERNS
     - MIXED_FLOWER_COVER
+  trees:
+    - SPARSE_WISPY_TREES
