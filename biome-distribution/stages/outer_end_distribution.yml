@@ -31,7 +31,7 @@ stages:
     sampler:
       type: CELLULAR
       return: CellValue
-      frequency: 1 / 400 / ${customization.yml:outer-end-biome-scale}
+      frequency: 1 / 600 / ${customization.yml:outer-end-biome-scale}
     from: ring5
     to:
       - END_HIGHLANDS: 1
