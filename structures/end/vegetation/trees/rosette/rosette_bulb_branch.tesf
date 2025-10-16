@@ -4,7 +4,7 @@ num x = 0;
 num y = 0;
 num z = 0;
 num random = 0;
-num length = 10+randomInt(150);
+num length = 10+randomInt(100);
 
 str setBlock = "minecraft:stripped_crimson_hyphae";
     
