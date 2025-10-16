@@ -1,6 +1,6 @@
 num randPrecision = 100;
 
-num height = 20+randomInt(60);
+num height = 20+randomInt(30);
 num direction = randomInt(randPrecision)/randPrecision;
 num dirInterval = 1;
 
