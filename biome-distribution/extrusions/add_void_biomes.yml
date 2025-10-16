@@ -7,13 +7,13 @@ extrusions:
       salt: 7586
       frequency: 1 / 200 / ${customization.yml:void-biome-scale} / ${customization.yml:global-scale}
     to:
-      - SELF: 20
+      - SELF: 80
       - STARFIELD: 1
-      - SELF: 20
+      - SELF: 80
       - AURORA: 1
-      - SELF: 20
+      - SELF: 80
       - NEBULA: 1
-      - SELF: 20
+      - SELF: 80
       - ASTEROID_FIELD: 1
     range:
       min: $customization.yml:void-biome-min
