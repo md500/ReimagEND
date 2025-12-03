@@ -23,15 +23,19 @@ for (num s = 0; s < shulkerAmount; s = s + 1) {
 }
 
 num radius = 16;
-bool chest = false;
+bool chest = true;
 
 for(num x = -radius; x < radius; x = x + 1) {
-      for(num y = -radius; y < radius; y = y + 1) {
-            for(num z = -radius; z < radius; z = z + 1) {
-                  if (chest == false) {
-                        if (getBlock(x,y,z) == "minecraft:chest" ||
-                        getBlock(x,y,z) == "minecraft:trapped_chest") block(x,y,z,"minecraft:air", true);
-                  }
+    for(num y = -radius; y < radius; y = y + 1) {
+        for(num z = -radius; z < radius; z = z + 1) {
+            if (chest == false) {
+                if (getBlock(x,y,z) == "minecraft:chest" ||
+                    getBlock(x,y,z) == "minecraft:trapped_chest") block(x,y,z,"minecraft:air", true);
             }
-      }  
+
+            if (getBlock(x,y,z) == "minecraft:chest") {
+                block(x,y,z,"minecraft:chest{LootTable:'chests/end_city_treasure'}", true);
+            }
+        }
+    }
 }

@@ -48,3 +48,5 @@ for (num s = 0; s < shulkerAmount; s = s + 1) {
 
     structure(xDir*rx, 10, zDir*rz, "spawn_shulker", "NONE");
 }
+
+structure(1-randomInt(3), 5, 1-randomInt(3), "shulker_ruin_chest", "NONE");
