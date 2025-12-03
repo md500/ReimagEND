@@ -22,11 +22,10 @@ for (num y = 0; y < length ; y = y + 1) {
     }
 }
 
-
 if(randomInt(endCrystalChance) == 0) {
     if (radius == 1.25) {
-        entity(0.5, length + yTranslate + 1, 0.5, "minecraft:end_crystal");
+        entity(0.5, length + yTranslate + 1, 0.5, "minecraft:end_crystal{ShowBottom:0}");
     } else {
-        entity(0, length + yTranslate + 1, 0, "minecraft:end_crystal");
+        entity(0, length + yTranslate, 0, "minecraft:end_crystal{ShowBottom:0}");
     }
 }
