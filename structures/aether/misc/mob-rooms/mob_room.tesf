@@ -1,5 +1,5 @@
 num searchRadius = 3;
-bool chest = true;
+bool chest = false;
 
 num mobRoll = randomInt(3);
 str mobState = "type=minecraft:zombie";
@@ -60,21 +60,12 @@ if (getBlock(xOffset + 1, yOffset, zOffset) != "minecraft:air" &&
     if (spawnable == true) {
         structure(xOffset + 7, yOffset, zOffset, "mob_room_east_sc", "NONE");
         state(xOffset + 7, yOffset + 3, zOffset, mobState);
-
-        if (chest == false) {
+        if (chest == false) { 
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
                     if (getBlock(xOffset + cx + 7, yOffset + 1, zOffset + cz) == "minecraft:chest") {
                         block(xOffset + cx + 7, yOffset + 1, zOffset + cz, "minecraft:air", true);
                     }
-                }
-            }
-        }
-
-        for (num cx = -3; cx < 3; cx = cx + 1) {
-            for (num cz = -3; cz < 3; cz = cz + 1) {
-                if (getBlock(xOffset + cx + 7, yOffset + 1, zOffset + cz) == "minecraft:chest") {
-                    block(xOffset + cx + 7, yOffset + 1, zOffset + cz, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
                 }
             }
         }
@@ -102,7 +93,6 @@ if (getBlock(xOffset - 1, yOffset, zOffset) != "minecraft:air" &&
     if (spawnable == true) {
         structure(xOffset - 7, yOffset, zOffset, "mob_room_west_sc", "NONE");
         state(xOffset - 7, yOffset + 3, zOffset, mobState);
-
         if (chest == false) {
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
@@ -112,15 +102,6 @@ if (getBlock(xOffset - 1, yOffset, zOffset) != "minecraft:air" &&
                 }
             }
         }
-
-        for (num cx = -3; cx < 3; cx = cx + 1) {
-            for (num cz = -3; cz < 3; cz = cz + 1) {
-                if (getBlock(xOffset + cx - 7, yOffset + 1, zOffset + cz) == "minecraft:chest") {
-                    block(xOffset + cx - 7, yOffset + 1, zOffset + cz, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
-                }
-            }
-        }
-
 
         fail;
     }
@@ -145,7 +126,6 @@ if (getBlock(xOffset, yOffset, zOffset + 1) != "minecraft:air" &&
     if (spawnable == true) {
         structure(xOffset, yOffset, zOffset + 7, "mob_room_south_sc", "NONE");
         state(xOffset, yOffset + 3, zOffset + 7, mobState);
-
         if (chest == false) {
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
@@ -155,15 +135,6 @@ if (getBlock(xOffset, yOffset, zOffset + 1) != "minecraft:air" &&
                 }
             }
         }
-
-        for (num cx = -3; cx < 3; cx = cx + 1) {
-            for (num cz = -3; cz < 3; cz = cz + 1) {
-                if (getBlock(xOffset + cx, yOffset + 1, zOffset + cz + 7) == "minecraft:chest") {
-                    block(xOffset + cx, yOffset + 1, zOffset + cz + 7, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
-                }
-            }
-        }
-
 
         fail;
     }
@@ -190,7 +161,6 @@ if (getBlock(xOffset, yOffset, zOffset - 1) != "minecraft:air" &&
     if (spawnable == true) {
         structure(xOffset, yOffset, zOffset - 7, "mob_room_north_sc", "NONE");
         state(xOffset, yOffset + 3, zOffset - 7, mobState);
-
         if (chest == false) {
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
@@ -201,15 +171,10 @@ if (getBlock(xOffset, yOffset, zOffset - 1) != "minecraft:air" &&
             }
         }
 
-        for (num cx = -3; cx < 3; cx = cx + 1) {
-            for (num cz = -3; cz < 3; cz = cz + 1) {
-                if (getBlock(xOffset + cx, yOffset + 1, zOffset + cz - 7) == "minecraft:chest") {
-                    block(xOffset + cx, yOffset + 1, zOffset + cz - 7, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
-                }
-            }
-        }
-
-
         fail;
     }
 }
+
+
+
+
