@@ -4,6 +4,8 @@
 >
 > # This version is **NOT supported** by the original developers !
 >
+> # Do not report bugs from this build to the official bug tracker.
+>
 > This fork is for **Terra v6.6.6 beta release** found in [this repository](https://github.com/md500/Terra/commits/build/legacy-6.6.6/).
 >
 > Please note that this fork is very **Experimental** for compatibility reasons.
