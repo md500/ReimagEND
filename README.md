@@ -4,6 +4,8 @@
 >
 > # This version is **NOT supported** by the original developers !
 >
+> # Do not report bugs from this build to the official bug tracker.
+>
 > This branch is for **OFFICIAL Beta Terra v6.6.6**
 >
 >  it solves the `iron_chain` crash on startup but this branch **does NOT have** chest loot tables on structures.
