@@ -1,3 +1,21 @@
+> [!WARNING]
+>
+> This fork is for **Terra v6.6.6 beta release** found in [this repository](https://github.com/md500/Terra/commits/build/legacy-6.6.6/).
+>
+> Please note that this fork is very **Experimental** for compatibility reasons.
+>
+>
+> **Please read !!**
+>
+> *   If you want ReimagEND for the official Terra v6.6.6 releases, Check [this branch](https://github.com/md500/ReimagEND/tree/v6.6.6-fixed).
+>
+>      **Note:** This branch **does NOT have** chest loot tables on structures.     
+>
+> *   If you are using Minecraft 1.21.9+ on Terra v7.0+ or want it for an older version of Terra or Reimagend versions, go to: [**PolyhedralDev/ReimagEND**](https://github.com/PolyhedralDev/ReimagEND).
+> 
+
+
+
 ![ReimagEND](https://github.com/user-attachments/assets/c407dcf6-ae98-4a7b-8db8-36b41d3ee7d3)
 
 ## A Terra pack designed to reimagine the End with new biomes, features, and terrain to explore.
