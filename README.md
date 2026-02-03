@@ -1,3 +1,19 @@
+> [!WARNING]
+>
+> # **This fork is Unofficial**
+>
+> This branch is for **OFFICIAL Beta Terra v6.6.6**
+>
+>  it solves the `iron_chain` crash on startup but this branch **does NOT have** chest loot tables on structures.
+>
+>  Note that this fork is very **Experimental** for compatibility reasons.
+>
+>    If you use the custom experimental jar (legacy-6.6.6), go to [**main branch**](https://github.com/md500/ReimagEND).
+>
+>    If you are using Minecraft 1.21.9+ / Terra v7.0+, and you want check older versions of terra and reimagend, go to the [**Official Repo**](https://github.com/PolyhedralDev/ReimagEND).
+>    
+
+
 ![ReimagEND](https://github.com/user-attachments/assets/c407dcf6-ae98-4a7b-8db8-36b41d3ee7d3)
 
 ## A Terra pack designed to reimagine the End with new biomes, features, and terrain to explore.
